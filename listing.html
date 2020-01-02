@@ -1,0 +1,523 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tops Salons</title>
+<!--[if IE]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/blueimp-gallery.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-image-gallery.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+ <!-- Image Gallery Start -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-default next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Image Gallery Start -->
+
+<!-- Header Start -->
+<header>
+	<div class="container">
+  	<a href="index.html" id="logo"><img src="images/logo.png" class="img-responsive" alt=""></a>
+  	<div class="clearfix">
+    	<div class="tollFree">Toll Free : 1-800-50050 </div>
+      <ul class="r-nav list-unstyled">
+        <li class="l"><a href="#">Login</a></li>
+        <li class="r"><a href="#">Register</a></li>
+        <li class="t"><a href="#"></a></li>
+        <li class="f"><a href="#"></a></li>
+        <li class="y"><a href="#"></a></li>
+      </ul>
+    </div>
+    <div class="menu">
+    	<nav class="navbar navbar-default">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">About Us</a></li>
+              <li class="faq"><a href="#">FAQs</a></li>
+              <li><a href="#">List Your Salon</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- Header End -->
+
+<!-- Main Start -->
+<main>
+	<div class="collapse-search">
+    	<div class="change-search">
+        	<div class="find-salon">
+            	<a href="javascript: void(0);" id="close"><img src="images/cross-icon.png" alt=""></a>
+              <form method="post" action="listing.html">
+                  <ul class="list-unstyled clearfix">
+                    <li>
+                        <select class="form-control">
+                        <option>Select City</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Noida">Noida</option>
+                        <option value="Gurgaon">Gurgaon</option>
+                      </select>
+                    </li>
+                    <li>
+                        <select class="form-control">
+                        <option>Select Locality</option>
+                        <option value="Green Park">Green Park</option>
+                        <option value="Hauz Khas">Hauz Khas</option>
+                        <option value="Safdarjang Enclave">Safdarjang Enclave</option>
+                        <option value="Lajpat Nagar">Lajpat Nagar</option>
+                        <option value="South Extension">South Extension</option>
+                        <option value="Chanakyapuri">Chanakyapuri</option>
+                        <option value="Greater Kailash">Greater Kailash</option>
+                      </select>
+                    </li>
+                    <li>
+                        <select class="form-control">
+                        <option>Select Service</option>
+                        <option value="Hair Cut">Hair Cut</option>
+                        <option value="Hair Styling">Hair Styling</option>
+                        <option value="Hair Coloring">Hair Coloring</option>
+                        <option value="Facial">Facial</option>
+                        <option value="Nails">Nails</option>
+                        <option value="Massage">Massage</option>
+                        <option value="Pedicure">Pedicure</option>
+                      </select>
+                    </li>
+                    <li><button><span><img src="images/search-icon.png" alt=""></span>Search</button></li>
+                  </ul>
+              </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper">
+    	<div class="container">
+        	<ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Library</a></li>
+              <li class="active">Data</li>
+            </ol>
+            <div class="short-disc">
+            	<span>Hair Cut from 25 Salons in Sector 18 (Noida)</span>
+                <a href="javascript: void(0);" class="change-location">Change location</a>
+            </div>
+            <div class="collapse-filter">
+                <div class="short-disc">FILTERS</div>
+                <form>
+                	<div class="form-group">
+                    	<select class="form-control">
+                        	<option>SORT BY</option>
+                            <option>Popularity - high to low</option>
+                            <option>Rating - high to low</option>
+                            <option>Cost - high to low</option>
+                            <option>Cost - low to high</option>
+                            <option>Recently added</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                    	<select class="form-control">
+                        	<option>LOCATION</option>
+                            <option>Noida (15)</option>
+                            <option>Gurgaon (32)</option>
+                            <option>Faridabad (5)</option>
+                            <option>Ghaziabad (18)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                    	<select class="form-control">
+                        	<option>SERVICE</option>
+                            <option>Hair Cut</option>
+                            <option>Hair Colour</option>
+                            <option>Hair Consulting</option>
+                            <option>Hair Extentions</option>
+                            <option>Hair Styling</option>
+                            <option>Hair Tretments</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                    	<select class="form-control">
+                        	<option>COST</option>
+                            <option>Less than Rs. 250 (15)</option>
+                            <option>Rs. 250 to Rs. 500 (12)</option>
+                            <option>Rs. 500 to Rs. 1,000 (8)</option>
+                            <option>Rs. 1,000 to Rs. 1,500 (4)</option>
+                            <option>Rs. 1,500 to Rs. 2,500 (2)</option>
+                            <option>Rs. 2,500 + (0)</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="list-wrap">
+            	<div class="filter-area">
+                	<h3>FILTERS</h3>
+                    <div class="filter">
+                    	<label>SORT BY</label>
+                        <h4>Popularity <a href="javascript: void(0);" class="filter-collapse"></a></h4>
+                        <ul class="list-unstyled">
+                        	<li><a href="#">Popularity - high to low</a></li>
+                            <li><a href="#">Rating - high to low</a></li>
+                            <li><a href="#">Cost - high to low</a></li>
+                            <li><a href="#">Cost - low to high</a></li>
+                            <li><a href="#">Recently added</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter">
+                    	<label>LOCATION</label>
+                        <h4>Type to filter <a href="javascript: void(0);" class="filter-collapse"></a></h4>
+                        <ul class="list-unstyled">
+                        	<li><a href="#">Noida (15)</a></li>
+                            <li><a href="#">Gurgaon (32)</a></li>
+                            <li><a href="#">Faridabad (5)</a></li>
+                            <li><a href="#">Ghaziabad (18)</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter">
+                    	<label>SERVICE</label>
+                        <h4>Click to choose <a href="javascript: void(0);" class="filter-collapse"></a></h4>
+                        <ul class="list-unstyled">
+                        	<li><a href="#">Hair Cut</a></li>
+                            <li><a href="#">Hair Colour</a></li>
+                            <li><a href="#">Hair Consulting</a></li>
+                            <li><a href="#">Hair Extentions</a></li>
+                            <li><a href="#">Hair Styling</a></li>
+                            <li><a href="#">Hair Tretments</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter">
+                    	<label>COST</label>
+                        <h4>Click to choose <a href="javascript: void(0);" class="filter-collapse"></a></h4>
+                        <ul class="list-unstyled">
+                        	<li><a href="#">Less than Rs. 250 (15)</a></li>
+                            <li><a href="#">Rs. 250 to Rs. 500 (12)</a></li>
+                            <li><a href="#">Rs. 500 to Rs. 1,000 (8)</a></li>
+                            <li><a href="#">Rs. 1,000 to Rs. 1,500 (4)</a></li>
+                            <li><a href="#">Rs. 1,500 to Rs. 2,500 (2)</a></li>
+                            <li><a href="#">Rs. 2,500 + (0)</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="list-area">
+                	<div class="item-wrap">
+                    	<div class="row">
+                        	<div class="col-md-9 col-sm-12 col-xs-12">
+                            	<div class="list-item">
+                                	<span class="alpha">S</span>
+                                	<p class="name">Sparsh Unisex Salon</p>
+                                    <ul class="list-unstyled">
+                                        <li><label>Address ></label> Jal Vayu Vihar, Shop No 20 21, First Floor, D Block Market, Sector 25</li>
+                                        <li><label>Phone ></label> 011-8547895, 9812478945</li>
+                                        <li><label>Average Cost ></label> 2000 for a Hair Cut</li>
+                                        <li>
+                                        	<ul class="list-unstyled rating">
+                                            	<li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                        	<ul class="list-unstyled other-link">
+                                            	<li><a href="javascript: void(0);">Full Rate Card</a></li>
+                                                <li><a href="javascript: void(0);">More Services</a></li>
+                                                <li><a href="javascript: void(0);">1966 reviews</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12">
+                            	<div class="info">
+                                	<div class="feedback">
+                                        <div class="like pull-left"><a href="javascript: void(0);">Like</a><p>33</p></div>
+                                        <div class="unlike pull-right"><a href="javascript: void(0);">Unlike</a><p>5</p></div>
+                                    </div>
+                                    <div class="photos">
+                                        <a href="images/sallon-1.jpg" title="Image 1" data-gallery>
+                                            <img src="images/sallon-1-small.jpg" alt="Image 1" class="img-responsive">
+                                        </a>
+                                        <a href="images/sallon-2.jpg" title="Image 2" data-gallery>
+                                            <img src="images/sallon-2-small.jpg" alt="Image 2" class="img-responsive"> 
+                                        </a>
+                                        <a href="javascript: void(0);">+15</a>
+                                    </div>
+                                    <a href="javascript: void(0);" class="book-online">Book Online</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item-wrap">
+                    	<div class="row">
+                        	<div class="col-md-9 col-sm-12 col-xs-12">
+                            	<div class="list-item">
+                                	<span class="alpha">M</span>
+                                	<p class="name">Make over Beauty Parlour</p>
+                                    <ul class="list-unstyled">
+                                        <li><label>Address ></label> Jal Vayu Vihar, Shop No 20 21, First Floor, D Block Market, Sector 25</li>
+                                        <li><label>Phone ></label> 011-8547895, 9812478945</li>
+                                        <li><label>Average Cost ></label> 2000 for a Hair Cut</li>
+                                        <li>
+                                        	<ul class="list-unstyled rating">
+                                            	<li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                        	<ul class="list-unstyled other-link">
+                                            	<li><a href="javascript: void(0);">Full Rate Card</a></li>
+                                                <li><a href="javascript: void(0);">More Services</a></li>
+                                                <li><a href="javascript: void(0);">1966 reviews</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12">
+                            	<div class="info">
+                                	<div class="feedback">
+                                        <div class="like pull-left"><a href="javascript: void(0);">Like</a><p>33</p></div>
+                                        <div class="unlike pull-right"><a href="javascript: void(0);">Unlike</a><p>5</p></div>
+                                    </div>
+                                    <div class="photos">
+                                        <a href="images/sallon-1.jpg" title="Image 1" data-gallery>
+                                            <img src="images/sallon-1-small.jpg" alt="Image 1" class="img-responsive">
+                                        </a>
+                                        <a href="images/sallon-2.jpg" title="Image 2" data-gallery>
+                                            <img src="images/sallon-2-small.jpg" alt="Image 2" class="img-responsive"> 
+                                        </a>
+                                        <a href="javascript: void(0);">+15</a>
+                                    </div>
+                                    <a href="javascript: void(0);" class="book-online">Book Online</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item-wrap">
+                    	<div class="row">
+                        	<div class="col-md-9 col-sm-12 col-xs-12">
+                            	<div class="list-item">
+                                	<span class="alpha">W</span>
+                                	<p class="name">Waves Designer Unisex Salon & Spa</p>
+                                    <ul class="list-unstyled">
+                                        <li><label>Address ></label> Jal Vayu Vihar, Shop No 20 21, First Floor, D Block Market, Sector 25</li>
+                                        <li><label>Phone ></label> 011-8547895, 9812478945</li>
+                                        <li><label>Average Cost ></label> 2000 for a Hair Cut</li>
+                                        <li>
+                                        	<ul class="list-unstyled rating">
+                                            	<li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                        	<ul class="list-unstyled other-link">
+                                            	<li><a href="javascript: void(0);">Full Rate Card</a></li>
+                                                <li><a href="javascript: void(0);">More Services</a></li>
+                                                <li><a href="javascript: void(0);">1966 reviews</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12">
+                            	<div class="info">
+                                	<div class="feedback">
+                                        <div class="like pull-left"><a href="javascript: void(0);">Like</a><p>33</p></div>
+                                        <div class="unlike pull-right"><a href="javascript: void(0);">Unlike</a><p>5</p></div>
+                                    </div>
+                                    <div class="photos">
+                                        <a href="images/sallon-1.jpg" title="Image 1" data-gallery>
+                                            <img src="images/sallon-1-small.jpg" alt="Image 1" class="img-responsive">
+                                        </a>
+                                        <a href="images/sallon-2.jpg" title="Image 2" data-gallery>
+                                            <img src="images/sallon-2-small.jpg" alt="Image 2" class="img-responsive"> 
+                                        </a>
+                                        <a href="javascript: void(0);">+15</a>
+                                    </div>
+                                    <a href="javascript: void(0);" class="book-online">Book Online</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item-wrap">
+                    	<div class="row">
+                        	<div class="col-md-9 col-sm-12 col-xs-12">
+                            	<div class="list-item">
+                                	<span class="alpha">G</span>
+                                	<p class="name">Glitz N Glow Unisex Salon </p>
+                                    <ul class="list-unstyled">
+                                        <li><label>Address ></label> Jal Vayu Vihar, Shop No 20 21, First Floor, D Block Market, Sector 25</li>
+                                        <li><label>Phone ></label> 011-8547895, 9812478945</li>
+                                        <li><label>Average Cost ></label> 2000 for a Hair Cut</li>
+                                        <li>
+                                        	<ul class="list-unstyled rating">
+                                            	<li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                                <li><a href="javascript: void(0);"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                        	<ul class="list-unstyled other-link">
+                                            	<li><a href="javascript: void(0);">Full Rate Card</a></li>
+                                                <li><a href="javascript: void(0);">More Services</a></li>
+                                                <li><a href="javascript: void(0);">1966 reviews</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12">
+                            	<div class="info">
+                                	<div class="feedback">
+                                        <div class="like pull-left"><a href="javascript: void(0);">Like</a><p>33</p></div>
+                                        <div class="unlike pull-right"><a href="javascript: void(0);">Unlike</a><p>5</p></div>
+                                    </div>
+                                    <div class="photos">
+                                        <a href="images/sallon-1.jpg" title="Image 1" data-gallery>
+                                            <img src="images/sallon-1-small.jpg" alt="Image 1" class="img-responsive">
+                                        </a>
+                                        <a href="images/sallon-2.jpg" title="Image 2" data-gallery>
+                                            <img src="images/sallon-2-small.jpg" alt="Image 2" class="img-responsive"> 
+                                        </a>
+                                        <a href="javascript: void(0);">+15</a>
+                                    </div>
+                                    <a href="javascript: void(0);" class="book-online">Book Online</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Main End -->
+
+<!-- Footer Start -->
+<footer>
+	<div class="container">
+  		<div class="row">
+        	<div class="col-md-3 col-sm-3 col-xs-12">
+            	<ul class="list-unstyled f-menu">
+                	<li><a href="#">About Us</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">List Your Salon</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12">
+            	<ul class="list-unstyled f-menu">
+                	<li><a href="#">Advertise</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-3 col-xs-12">
+            	<ul class="list-unstyled f-menu">
+                	<li><a href="#">Terms & Conditions </a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12">
+            	<ul class="list-unstyled f-menu text-center">
+                	<li><p>STAY CONNECTED</p></li>
+                    <li>
+                    	<ul class="list-unstyled">
+                        	<li class="f"><a href="#"></a></li>
+                            <li class="t"><a href="#"></a></li>
+                            <li class="i"><a href="#"></a></li>
+                            <li class="y"><a href="#"></a></li>
+                            <li class="p"><a href="#"></a></li>
+                            <li class="g"><a href="#"></a></li>
+                            <li class="in"><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li><p>SUBSCRIBE TO NEWSLETTER</p></li>
+                    <li>
+                    	<input type="text" placeholder="Your email">
+                        <input type="submit" class="btn btn-danger" value="SUBMIT">
+                    </li>
+                </ul>
+            </div>
+        </div>
+  </div>
+  <div class="copyright text-center">Copyright © 2015, TopSalons.in</div>
+</footer>
+<!-- Footer End -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+</body>
+</html>
